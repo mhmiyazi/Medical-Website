@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 70%;
+}
+
+a{
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h2, h3, a {
+  font-family: 'Roboto' , sans-serif;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px; padding-top: 2%;margin-bottom: 5px; margin: 0;
+}
+
+@media all and (max-width: 620px) {
+  h2{
+    font-size: 25px;
+  }
+}
+
+h3 {
+  font-size: 40px; padding-top: 8%; margin-bottom: 5px; margin: 0;
+}
+
+h4, p {
+  font-family: 'Roboto Slab' , serif;
+  color: #494949;
+}
+
+hr {
+  width: 30px;
+  height: 3px;
+  background: #494949;
+  border: 0;
+  margin: 0 auto 40px auto;
+}
+#logo, li, img, .button {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms}
+.fa-align-justify {display: none;}
+
+/*HEADER******************************/
+
+nav {
+  background-color: white;
+  padding: .8em 0;
+  position: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 1fr;
+  grid-template-columns: 5fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  z-index: 3;
+  -webkit-box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 3em;
+}
+
+nav .nav-start img {
+  height: 3.4em;
+}
+
+nav .nav-end {
+  padding: 6px;
+  padding-right: 2em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  align-items: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  text-align: center;
+}
+
+nav .nav-end ul {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  margin: .8em;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1.6em;
+}
+
+nav .nav-end ul li{
+  width: min-content;
+}
+
+nav .nav-end ul li a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+nav .nav-end ul li a:hover {
+  color: #979797;
+}
+
+@media all and (max-width: 1000px) {
+  nav {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  nav .nav-start {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  nav .nav-end ul {
+    display: none;
+  }
+}
+
+/*Teeniesprechstunde******************************/
+#sect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3em;
+  margin-top: 7em;
+}
+
+#sect p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  max-width: 40em;
+  font-size: 1.4rem;
+  padding: 1em;
+}
+
+#sect img {
+  width: 612px;
+  height: 408px;
+}
+
+@media all and (max-width: 620px) {
+  #sect img {
+    max-width: 100vw;
+    height: auto;
+  }
+}
+
+
+
+
+
+/*Anfahrt******************************/
+/*Anfahrt******************************/
+p {
+  margin: 0 0;
+}
+.kontakt {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  min-height: 50em;
+}
+
+.kontakt div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.1);
+  margin: 6%;
+}
+
+.kontakt .location {
+  margin-right: 3%;
+}
+
+.kontakt .location iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.kontakt .email {
+  margin-left: 3%;
+  padding-bottom: 3em;
+  background: white;
+  font-family: "Oswald", sans-serif;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.kontakt .email p {
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+}
+
+.kontakt .email h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  padding: .5em;
+  font-family: "Oswald", sans-serif;
+}
+
+.kontakt .email h2 {
+  color: black;
+  font-size: 3.2rem;
+  text-transform: none;
+  font-family: "Oswald", sans-serif;
+  padding: .4em;
+}
+
+.kontakt .email h3 {
+  padding: .4em 3px;
+  max-width: 15em;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.kontakt .email a {
+  margin: 0;
+  padding: .6em 1em;
+  width: 16em;
+  text-align: center;
+  color: #000000;
+  font-size: 1.3rem;
+  background: rgba(121, 121, 121, 0.247);
+  -webkit-transition-duration: .75s;
+          transition-duration: .75s;
+  margin-bottom: 2em;
+  border: rgba(0, 0, 0, 0.048) 1px solid;
+  font-family: "Oswald", sans-serif;
+}
+
+.kontakt .email a:hover {
+  background: rgba(176, 192, 28, 0.247);
+  color: rgba(0, 0, 0, 0.621);
+}
+
+@media all and (max-width: 1200px) {
+  .kontakt {
+    min-height: 50em;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .kontakt .location {
+    margin: 6%;
+    margin-bottom: 0;
+  }
+  .kontakt .email {
+    margin: 6%;
+    margin-top: 0;
+  }
+  .kontakt .email h1 {
+    font-size: 3rem;
+  }
+  .kontakt .email h3 {
+    font-size: 2rem;
+  }
+  .kontakt .email a {
+    font-size: 1rem;
+    width: 14em;
+  }
+  .kontakt .email p {
+    font-size: 1em;
+  }
+}
+
+/*FOOTER******************************/
+footer {
+  position: relative;
+  padding-top: 3em;
+  height: 70px;
+  background-color: #3f3f3f;
+  padding-top: 0.1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+footer p {
+  font-size: 12px;
+  color: #f0f0f0;
+  padding: 0;
+}
+
+footer a {
+  font-size: 12px;
+  color: #f0f0f0;
+  padding: 0;
+}
+
+/* Media Queries ******************************/
+
+/* Tablets */
+
+@media screen and (max-width: 1024px) {
+  #home h1 {
+    font-size: 90px;
+    margin-top: 200px;
+  }
+
+  #home h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    padding-top: 12%
+  }
+}
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+  .fa-align-justify {
+    font-size: 17px;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    text-align: right;
+    margin: -25px 30px 0 0;
+  }
+
+  .fa-align-justify {
+    opacity: 0.5;
+  }
+}

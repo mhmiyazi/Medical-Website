@@ -1,0 +1,143 @@
+/*-----------------------------------------*/
+/*This CSS Style is premium type of project*/
+/*Only they have permission to use,whose are permitted*/
+/*Permission: YES*/
+/*Owner Name: Marekstachura*/
+/*Version: v4.0.0*/
+/*Developer: MH Miyazi*/
+/*-----------------------------------------*/
+/*Masthead/Welcome START*/
+.masthead h1{
+	font-size: 3rem !important;
+}
+@media (min-width: 1000px){
+.masthead h1{
+    font-size: 4rem !important;
+    padding-top: 1.1em !important;
+}
+}
+/*Masthead/Welcome END*/
+/*Home Section START*/
+.has-box-shadow{
+box-shadow: 0px 0px 16px 3px rgb(0 0 0 / 10%) !important;
+}
+.home-img{
+	width: 200px;
+}
+.f-s-3-rem{
+	font-size: 3rem !important;
+}
+.f-w-700{
+	font-weight: 700 !important;
+}
+.hr{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+ 	border: 1px solid #000000;
+}
+/*Home Section END*/
+/*About Section START*/
+.about-img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 60%;
+}
+/*About Section END*/
+/*Work/Portfolio START*/
+/*Work/Portfolio END*/
+/*MapView START*/
+.iframe-map{
+	width: 100%;
+	height: 350px;
+}
+@media (min-width: 991px) {
+  .iframe-map{
+	width: 100%;
+	height: 600px;
+}
+}
+
+/*MapView END*/
+/*Contact START*/
+#contact a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+/*Contact END*/
+
+/*footer START*/
+.impressum-a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+/*footer END*/
+
+
+
+/*Pages Style START*/
+
+/*Abklärung Style START*/
+.nav-spacer{
+	height: 130px !important;
+}
+hr{
+	width: 30px;
+    height: 3px !important;
+    background: #000;
+    border: 0;
+    margin: 0 auto 40px auto
+}
+
+#sect1 h2{
+	text-align: center;
+	font-size: 25px;
+	text-transform: uppercase;
+	padding-top: 2%;
+	font-weight: 500;
+	color: #000;
+}
+#sect1 img{
+	display: block;
+	width: 100%;
+	max-width: 612px;
+	margin-left: auto;
+	margin-right: auto;
+    /*height: 408px;*/
+}
+#sect2{
+	padding-left: 0;
+	margin-top: 20px;
+}
+@media (min-width: 991px) {
+  #sect2 p{
+  	margin-top: 20px;
+	/*padding-left: 15% !important;*/
+	text-align: justify !important;
+}
+}
+#sect2 p{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 1.4rem;
+	/*padding: .5em 0;*/
+	line-height: initial;
+	text-align: left;
+	color: #494949;
+	line-break: auto;
+/*	hyphens: auto;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;*/
+}
+#sect2 h2{
+	text-align: center;
+	font-size: 25px;
+	padding-top: 2%;
+	color: #000;
+}
+/*Abklärung Style END*/
+
+/*Pages Style END*/
